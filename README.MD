@@ -1,14 +1,21 @@
-# versão atual tailwindcss v4.1
+# 🚀 Aprimorando JavaScript
 
-# Instalar Tailwind CSS
-# Entrar no terminar digitar o camando na pasta raiz do projeto.
+Repositório criado para organizar meus estudos e práticas em **JavaScript**, desde os conceitos básicos até recursos modernos do ES6+.
 
-# npm install tailwindcss @tailwindcss/cli
+## 🎯 Objetivos
+- Melhorar lógica e resolução de problemas  
+- Aplicar boas práticas  
+- Explorar funcionalidades modernas da linguagem  
 
-# Adicione a @import "tailwindcss";importação ao seu arquivo CSS principal.
+## 📚 Conteúdos
+- Fundamentos: variáveis, funções, arrays e objetos  
+- ES6+: arrow functions, módulos, async/await  
+- Boas práticas e organização de código  
 
-# Execute a ferramenta CLI para escanear seus arquivos de origem em busca de classes e construir seu CSS.
+## 🧠 Exercícios
+Inclui desafios práticos, estudos e pequenos projetos para fixação.
 
-# Entrar no terminar e digita o comando a baixo.
+## 👨‍💻 Autor
+**Eduardo França**
 
-# npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+> Evoluindo um pouco todos os dias. 🚀
