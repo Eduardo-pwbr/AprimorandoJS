@@ -1,0 +1,46 @@
+let listElement =  document.querySelector('#app');
+
+let posts =  [];
+
+function fetchPosts() {
+  
+  fetch('https://sujeitoprogramador.com/rn-api/?api=posts')
+  .then((response) => response.json())
+  .then((json) => {
+    //console.log(json);
+    posts = json;
+
+    //console.log(posts);
+    posts.map((item) => {
+      //console.log(item)
+     let liElement = document.createElement('li')
+     let titleElement = document.createElement('strong')
+     let imgElement = document.createElement('img')
+     let descriptionElement = document.createElement('a')
+
+
+     let titleText = document.createTextNode(item.titulo)
+     titleElement.appendChild(titleText);
+     liElement.append(titleElement);
+
+     imgElement.src = item.capa;
+     liElement.appendChild(imgElement)
+
+     let descriptionText = document.createTextNode(item.subtitulo);
+     descriptionElement.appendChild(descriptionText);
+     liElement.append(descriptionElement)
+
+     listElement.appendChild(liElement)
+  
+    });
+   
+  })
+  .catch((error) => {
+    console.log('Deu ruim', error);
+  });
+}
+
+fetchPosts();  
+
+  
+
