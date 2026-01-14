@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#">
+      <input type="text" id="txtNome" placeholder="nome" /><br /><br />
+      <input type="text" id="txtEmail" placeholder="email" /><br /><br />
+
+      <input type="checkbox" id="contrato" onchange="enableOrDisableButton()" />
+      <label for="contrato">Li e aceito o seguinte contrato</label
+      ><br /><br /><br />
+      <textarea name="" id="" rows="10"></textarea><br /><br />
+      <input type="submit" value="cadastrar" disabled />
+    </form>
+
+    <script>
+      const bnt = document.querySelector('form input[type="submit"]');
+      bnt.disabled = true;
+      function enableOrDisableButton() {
+        const contrato = document.querySelector("#contrato");
+
+        let checked = contrato.checked;
+        console.log(checked);
+
+        //1 forma de fazer
+        //if(checked){
+        // bnt.disabled = false
+        //  }
+        //  else{
+        //   bnt.disabled = true
+        // }
+
+        // 2 forma de fazer
+        bnt.disabled = !checked;
+      }
+    </script>
+  </body>
+</html>

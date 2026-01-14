@@ -1,0 +1,12 @@
+const fruta = "banana"
+const preco = 3.50
+const lavar = true
+let novovalor
+
+console.log(typeof fruta)
+console.log(typeof preco)
+console.log(typeof lavar)
+console.log(typeof novovalor)
+
+console.log(Number.isInteger(12))
+console.log(Number.isInteger(3.40))
